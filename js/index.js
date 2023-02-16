@@ -130,8 +130,6 @@ document.getElementById("last-card").addEventListener("click", function () {
 // --------------------------------------------------
 // common function to display data
 
-function getAllData() {}
-
 function displayData(nameOfP, priceOfP, quantityOfP, result) {
   const container = document.getElementById("table-container");
 
@@ -152,4 +150,10 @@ function displayData(nameOfP, priceOfP, quantityOfP, result) {
 // for one click disable button
 function disabledButton(id) {
   document.getElementById(id).setAttribute("disabled", true);
+}
+
+// function for grand total
+function getAllData() {
+  const totalProducts = document.getElementById("total-product");
+  console.log(totalProducts);
 }
